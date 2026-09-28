@@ -1,11 +1,11 @@
 #include<stdio.h>
-int main(void)
+int main()
 {
 	double u,i,t,p,r,e;
 	scanf("%lf %lf %lf",&u,&i,&t);
 	p=u*i;
 	r=u/i;
-	e=u*i*t/3600;
-	printf("%.2lf %.2lf %.3lf",p,r,e);
-	return 0;                            
+	e=p*t/3600;
+	printf("P=%.3lf\nR=%.3lf\nE=%.3lf\n",p,r,e);
+	return 0;
 }
